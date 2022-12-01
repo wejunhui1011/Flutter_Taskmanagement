@@ -28,7 +28,6 @@ class LoginView extends GetView<LoginController> {
         ),
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-       
           child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
@@ -46,27 +45,30 @@ class LoginView extends GetView<LoginController> {
             ),
           ),
 
-          Text('Start Journey us',
+          Text(
+            'Start Journey us',
           style: TextStyle(
             color: Colors.white, 
             fontSize: 20,
-            ),
           ),
-          ]),
+        ),
+      ]),
+    ),
+  ),
+),
+  Expanded(
+              child: Container(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topRight: Radius.circular(50),
+                    bottomRight: Radius.circular(50),
+                  ),
+                  color: Colors.white,
+                ),
+        ),
       ),
-    ),
-    Expanded(
-        child: Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
-        topRight: Radius.circular(50),
-          bottomRight: Radius.circular(50),
-        ),
-        color: Colors.white,
-        ),
-        )),
-        ]),
-    ),
-    );
+    ],
+  ),
+));
   }
 }
