@@ -32,7 +32,8 @@ class LoginView extends GetView<LoginController> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          Text('Welcome', 
+          Text(
+            'Welcome', 
           style: TextStyle(
             color: Colors.white, 
             fontSize: 65,
