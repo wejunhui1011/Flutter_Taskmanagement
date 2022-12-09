@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -64,12 +66,16 @@ class LoginView extends GetView<LoginController> {
                     topRight: Radius.circular(50),
                     bottomRight: Radius.circular(50),
                   ),
-                  color: Colors.white,
                 ),
+                child: Column(children: [
+                  Image.asset('assets/imaage/login.png'),
+                  FloatingActionButton.extended(
+                    onPressed: (){}, label: Text('Sign In With Google'))
+                  ]),
         ),
-      ),
-    ],
+      )
+    ]),
   ),
-));
+);
   }
 }
