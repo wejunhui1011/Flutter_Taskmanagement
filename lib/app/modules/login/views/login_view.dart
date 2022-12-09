@@ -70,7 +70,7 @@ class LoginView extends GetView<LoginController> {
                 child: Column(children: [
                   Image.asset('assets/imaage/login.png'),
                   FloatingActionButton.extended(
-                    onPressed: (){}, label: Text('Sign In With Google'))
+                    onPressed: (){}, label: Text('Sign In With Google'),icons: Icon(Icon) ,)
                   ]),
         ),
       )
