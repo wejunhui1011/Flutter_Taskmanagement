@@ -19,7 +19,7 @@ class LoginView extends GetView<LoginController> {
           color: Colors.white,
         ),
         child: Row(children: [
-          Expanded(
+          Expanded (
             child: Container(
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
@@ -70,7 +70,7 @@ class LoginView extends GetView<LoginController> {
                 child: Column(children: [
                   Image.asset('assets/imaage/login.png'),
                   FloatingActionButton.extended(
-                    onPressed: (){}, label: Text('Sign In With Google'),icons: Icon(Icon) ,)
+                    onPressed: (){}, label: Text('Sign In With Google'),)
                   ]),
         ),
       )
